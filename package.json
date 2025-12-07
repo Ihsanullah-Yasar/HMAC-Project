@@ -1,0 +1,24 @@
+{
+  "name": "hmac-authentication",
+  "version": "1.0.0",
+  "description": "Complete HMAC Authentication System for Beginners",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test.js",
+    "dev": "nodemon src/server.js",
+    "client": "node src/client/testClient.js",
+    "generate-secret": "node -e \"console.log(require('crypto').randomBytes(32).toString('hex'))\""
+  },
+  "keywords": ["hmac", "authentication", "security", "api", "beginner"],
+  "author": "Ahsanullah",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
